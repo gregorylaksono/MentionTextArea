@@ -1,0 +1,9 @@
+<html>
+<body contenteditable='true'>
+</body>
+<script>
+document.body.oninput = function(){
+	alert('test');
+}
+</script>
+</html>
