@@ -8,7 +8,7 @@ window.cz_tactica_component_label_MentionLabel = function() {
 	connector = this;
 	
 	var imgUrl = getUserImage(state.imageId);
-	discard(state.layoutId);
+	r_discardLabel(state.layoutId);
 	
 	var id = state.labelId;
 	
@@ -45,7 +45,7 @@ function createUserCommentElement(userCommentName){
 	commentName.classList.add('default-label');
 	return commentName;
 }
-function discard(){
+function r_discardLabel(){
 	connector.deleteParent();
 //	var layout = document.getElementById(layoutId);
 //	if(layout != null){

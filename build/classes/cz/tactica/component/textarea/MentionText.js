@@ -385,10 +385,10 @@ function focusElement(parent, isIncrement){
 		for (var i=0; i<obj.length; i++) {
 			var user = obj[i];
 			
-			var userId = user.userId;
-			var userName = user.name;
-			var telp = user.telp;
-			var imageUrl = user.imageUrl;
+			var userId = user[1];
+			var userName = user[2];
+			var telp = user[3];
+			var imageUrl = user[0];
 			var url = imageUrl;
 			
 			var userDiv = createUserDiv(userId, userName, url, telp);
